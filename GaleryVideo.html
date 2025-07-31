@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kota Padang Sumatera Barat</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="Berita.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container header-container">
+            <a href="index.html" class="brand" aria-label="Kota Padang homepage">Sumatera Barat - Kota Padang</a>
+            <nav class="nav" role="navigation" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Profile.html" class="nav-link">profil kota</a>
+                <a href="GaleryFoto.html" class="nav-link">Galeri Foto</a>
+                <a href="GaleryVideo.html" class="nav-link">Galeri Video</a>
+                <a href="Berita.html" class="nav-link">Berita</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="background-color: #f4f6fb; font-family: 'Segoe UI', sans-serif; padding: 60px 20px;">
+  <section style="max-width: 1300px; margin: auto;">
+    <header style="text-align: center; margin-bottom: 50px;">
+      <h1 style="color: #800000; font-size: 3rem; font-weight: bold;">Eksplorasi Budaya Minangkabau</h1>
+      <p style="color: #555; font-size: 1.1rem; max-width: 800px; margin: 10px auto 0;">
+        Jelajahi ragam kekayaan budaya Sumatra Barat melalui video-video eksklusif tentang tarian tradisional, seni pertunjukan, hingga kearifan lokal masyarakat Minang.
+      </p>
+    </header>
+
+    <!-- Filter Dropdown -->
+    <div style="text-align: right; margin-bottom: 30px;">
+      <select onchange="filterVideos(this.value)" style="padding: 10px 15px; border-radius: 8px; border: 1px solid #ccc;">
+        <option value="all">Semua Kategori</option>
+        <option value="tarian">Tarian Tradisional</option>
+        <option value="teater">Seni Pertunjukan</option>
+        <option value="dokumenter">Dokumenter Budaya</option>
+      </select>
+    </div>
+
+    <!-- Video Gallery Grid -->
+    <div id="video-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 35px;">
+
+      <!-- Video 1 -->
+      <div class="video-card" data-category="tarian" style="background-color: white; border-radius: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s;">
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/pQNyro8qmP0" frameborder="0" allowfullscreen></iframe>
+        <div style="padding: 20px;">
+          <h3 style="color: #800000; font-size: 1.3rem;">Tari Piring - Ikon Energi Minang</h3>
+          <p style="color: #555; font-size: 0.95rem; margin: 10px 0;">Gerakan dinamis yang mencerminkan kelincahan dan ketangkasan masyarakat Minangkabau.</p>
+          <span style="font-size: 0.8rem; color: #999;">Kategori: Tarian Tradisional</span>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card" data-category="teater" style="background-color: white; border-radius: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s;">
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/ey_-TLCCQlg" frameborder="0" allowfullscreen></iframe>
+        <div style="padding: 20px;">
+          <h3 style="color: #800000; font-size: 1.3rem;">Randai - Teater Rakyat Minangkabau</h3>
+          <p style="color: #555; font-size: 0.95rem; margin: 10px 0;">Seni teater tradisional yang memadukan cerita rakyat, silat, dan musik lokal.</p>
+          <span style="font-size: 0.8rem; color: #999;">Kategori: Seni Pertunjukan</span>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card" data-category="dokumenter" style="background-color: white; border-radius: 15px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); overflow: hidden; transition: 0.3s;">
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/3lnghaNoSgQ" frameborder="0" allowfullscreen></iframe>
+        <div style="padding: 20px;">
+          <h3 style="color: #800000; font-size: 1.3rem;">Dokumenter Minangkabau</h3>
+          <p style="color: #555; font-size: 0.95rem; margin: 10px 0;">Potret menyeluruh kehidupan adat, filosofi, dan arsitektur Rumah Gadang.</p>
+          <span style="font-size: 0.8rem; color: #999;">Kategori: Dokumenter Budaya</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Filter Script -->
+  <script>
+    function filterVideos(category) {
+      const videos = document.querySelectorAll('.video-card');
+      videos.forEach((card) => {
+        const isVisible = category === 'all' || card.getAttribute('data-category') === category;
+        card.style.display = isVisible ? 'block' : 'none';
+      });
+    }
+  </script>
+</main>
+
+      <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Kota Padang Sumatera Barat. All rights reserved.</p>
+             <div class="Social-media">
+                <a href="https://www.tiktok.com/@info_padang?_t=ZS-8yRx0JFuF29&_r=1" class="social-icon tiktok"><img src="c:\Users\advan\Downloads\tiktik.webp" height="25px"></a>
+                <a href="https://www.instagram.com/infopadang_?igsh=eHo0N25lb3FwZXZ0" class="social-icon id"><img src="c:\Users\advan\Downloads\igg.png" height="25px"></a>
+                
+             </div>
+        </div>
+    </footer>
+</body>
+</html>

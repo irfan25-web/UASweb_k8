@@ -1,0 +1,331 @@
+/* Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #eaf6fb;
+    color: #1a237e;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #aa2c2c 0%, #5a0303 100%);
+    padding: 1rem 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #aa2c2c; /* Biru muda untuk hover */
+}
+
+/* Logo Bandung */
+.logo-bandung {
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(content_kota_padang.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 6rem 1rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+
+.pdg {
+    color: #5e1515;
+}
+
+.herotext {
+    color: #f5f7fa;
+}
+.hero-icon {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #aa2c2c;;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #aa2c2c;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.judul {
+    color: #5e1515;
+    font-style: italic; 
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.pq {
+    text-decoration: none;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #aa2c2c;;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #aa2c2c;;
+}
+
+/* Footer */
+.footer {
+    background-color:#aa2c2c;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-link {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #42a5f5;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.social-icon:hover {
+  color: #ffd700;
+}
+
+
+
+/* --- PROFILE WILAYAH KOTA BANDUNG --- */
+.profile-wilayah {
+    background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(33,150,243,0.10);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin: 2.5rem auto;
+    max-width: 900px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #2e8b57;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.wilayah-desc {
+    background: rgba(33,150,243,0.07);
+    border-radius: 16px;
+    padding: 1.2rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.08rem;
+    color: #2c3e50;
+    box-shadow: 0 2px 12px #2196f333;
+}
+
+.wilayah-map {
+    margin: 2rem 0;
+    text-align: center;
+}
+.wilayah-map img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px #2196f333;
+    border: 2px solid #aa2c2c;;
+}
+
+.sub-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #aa2c2c;;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.wilayah-gallery {
+    margin-top: 2.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(33,150,243,0.13);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:hover,
+.card:focus-visible {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(33,150,243,0.18);
+    outline: none;
+}
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 2px solid #aa2c2c;;
+}
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #aa2c2c;;
+    margin-bottom: 0.5rem;
+}
+.card-desc {
+    font-size: 0.98rem;
+    color: #1a237e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Responsive */
+@media (max-width: 700px) {
+    .profile-wilayah {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .wilayah-map img {
+        max-width: 98vw;
+    }
+}
